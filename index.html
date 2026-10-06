@@ -2,9 +2,28 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<title>ETF Radar - loading full file</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ETF Radar">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f6f9" media="(prefers-color-scheme: light)">
+<meta name="mobile-web-app-capable" content="yes">
+<title>ETF Radar</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p>Caricamento contenuto completo in corso...</p>
+<main>
+<div id="list">
+  <h1>📡 ETF Radar</h1>
+  <div class="sub">Score v4 · dati Yahoo Finance (ritardati)</div>
+  <div class="beta">⚠️ Strumento informativo. Non è consulenza finanziaria.</div>
+  <div id="status" class="loading">Caricamento…</div>
+  <div id="cards"></div>
+</div>
+<div id="detail" style="display:none"></div>
+<div class="dis">Fonte: Yahoo Finance non ufficiale. Score euristico. Non è trading automatico.</div>
+</main>
+<script src="app.js"></script>
 </body>
 </html>
